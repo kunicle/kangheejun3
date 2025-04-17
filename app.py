@@ -50,7 +50,7 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY',
     df_20th = df.loc["1900":"2000"]
     try:
         if not df_20th.empty:
-            '''코드를 작성하시오'''
+            #코드를 작성하시오
             axs[1, 0].boxplot(df_20th[sunactivity_col], vert=False)
     except:
         # 해당 기간 데이터가 없을 경우 예외 처리
