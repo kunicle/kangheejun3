@@ -39,7 +39,6 @@ def plot_advanced_sunspot_visualizations(df, sunactivity_col='SUNACTIVITY',
         density = gaussian_kde(data)
 
         #코드를 작성하시오
-        axs[1, 0].boxplot(df_20th[sunactivity_col], vert=False)
         axs[0, 1].plot(xs, density(xs), color='red', linewidth=2, label='Density')
     axs[0, 1].set_title("Distribution of Sunspot Activity")
     axs[0, 1].set_xlabel("Sunspot Count")
